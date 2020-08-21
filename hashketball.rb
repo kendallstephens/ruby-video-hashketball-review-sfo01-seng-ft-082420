@@ -128,6 +128,7 @@ def game_hash
 end
 
 
+#num_points_scored: knows the number of points scored by each player#
 
 def num_points_scored(find_player)
   game_hash.each do |team,team_info|
@@ -138,8 +139,9 @@ def num_points_scored(find_player)
     end
   end
 end
-  
-def shoe_size(find_player)
+
+  #shoe_size: knows the shoe size of each player
+def shoe_size(find_player)!!!
   game_hash.each do |team,team_info|
     team_info[:players].each do |player|
       if player[:player_name] == find_player
